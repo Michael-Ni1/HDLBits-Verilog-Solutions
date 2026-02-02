@@ -18,7 +18,7 @@ module top_module(
     generate
     	genvar i;
     	for(i=1; i<4; i++) 
-    	begin
+    	begin: adder_loop
     		bcd_fadd u_bcd_fadd(
     				.a(a[4*i+3 : 4*i]),
     				.b(b[4*i+3 : 4*i]),
